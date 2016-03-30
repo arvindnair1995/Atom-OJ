@@ -106,9 +106,37 @@ div#content {
     clear: both;
     display: block;
     width:100%;
-    height: 700px;
+    height: auto;
+    min-height: 700px;
+    padding-bottom: 50px;
     margin-top: auto;
     border:none ;
     background-color:#d1d1e0;
+}
+
+div.container-fluid footer{
+    padding-top: 10px;
+    width: 100%;
+    height:70px;
+    background-color: #d1d1e0;
+}
+
+hr.s {
+    padding: 0;
+    border: none;
+    margin-bottom: 0px;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+
+hr.s:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: #d1d1e0;
 }
 
