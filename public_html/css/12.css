@@ -2,8 +2,7 @@
     height: auto;
     padding-top: 50px;
 }
-
-#content section .container #info1, #content section .container #info2{
+#info1, #info2{
     margin-top: 20px;
     padding:5px 0px;
     border-bottom: 2px double rgb(51, 51, 77);
@@ -11,7 +10,7 @@
     font-size: 20px;
 }
 
-#content section .container #info2{
+#info2{
     margin-top: 5px;
 }
 
