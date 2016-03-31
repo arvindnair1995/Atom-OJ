@@ -2,7 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Atom-OJ" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Atom-OJ" vcs="" />
     <mapping directory="$PROJECT_DIR$/public_html" vcs="Git" />
   </component>
 </project>
