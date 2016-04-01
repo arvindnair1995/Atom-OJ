@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/16.css">
-    <link rel="stylesheet" href="css/17.css">
-    <link rel="stylesheet" href="bootstrap-3.3.6/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/12.css">
+    <link rel="stylesheet" href="css/15.css">
+
 
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -47,43 +47,40 @@
 <!--********************* C O N T E N T *****************-->
 <div id="content">
     <section>
-        <div class="container" style="padding-left: 0px;padding-right: 0px">
+        <div id="info" class="container">
             <div id="info1">#Problem Id/Problem Name</div>
-            <div id="info2">Algorithm</div>
+            <div id="info2">#My Submissions</div>
+        </div>
+        <div class="container" id="c1">
+            <table class="table table-hover">
+                <tr>
+                    <th>Submission No.</th>
+                    <th>Time/Date</th>
+                    <th>Status</th>
+                </tr>
+                <tr class="wrong">
+                    <td>1</td>
+                    <td><p>13:30/12/01/2015</p></td>
+                    <td>Wrong Algorithm</td>
+                </tr>
+                <tr class="wrong">
+                    <td>2</td>
+                    <td><p>13:30/12/01/2015</p></td>
+                    <td>Wrong Program</td>
+                </tr>
+                <tr class="accepted">
+                    <td>3</td>
+                    <td><p>13:30/12/01/2015</p></td>
+                    <td>Accepted</td>
+                </tr>
+            </table>
         </div>
     </section>
-<!--********************* E D I T O R *******************-->
-    <div class="container" id="wrapper">
-
-        <div id="editor">function foo(items) {
-                    var x = "All this is syntax highlighted";
-                    return x;
-                    }
-        </div>
-    </div>
-    <div class="container" style="padding-right: 0px">
-        <a href="#" class="btn btn-primary" style="font-size: 25px;float: right;width: 150px;">Submit</a>
-    </div>
-
-    <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
-    <script>
-        var editor = ace.edit("editor");
-        editor.setTheme("ace/theme/xcode.js");
-        editor.getSession().setMode("ace/mode/javascript");
-        document.getElementById('editor').style.fontSize='18px';
-<<<<<<< HEAD
-        editor.setOption("showPrintMargin", false)
-=======
-        editor.setOption("showPrintMargin", false);
->>>>>>> 88b6c63e4120b8dc95fbe39c40d8f598175265ac
-
-    </script>
-
 </div>
 <!--********************* S I D E  B A R ****************-->
 <aside></aside>
 <!--********************* F O O T E R *******************-->
-<div class="container-fluid" style="padding: 0px;"><footer><hr class="s"></footer></div>
+<footer></footer>
 </div>
 </body>
 </html>
