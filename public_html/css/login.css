@@ -6,6 +6,7 @@ body {
 
 .container{
     margin-top:50px ;
+    max-width: 1170px;
     border:none ;
     padding: 0;
     background-color: rgba(0,0,0,0.4);
@@ -21,9 +22,10 @@ body {
     text-shadow: 0.5px .5px 0px grey;
 
 }
+
 .box #register{
     float: left;
-    width: 50%;
+    width: 585px;
     padding-top: 5px;
     padding-left: 200px;
     border-right:solid rgba(255,255,255,0.5) 5px;
@@ -32,7 +34,7 @@ body {
 
 .box #login{
     float: right;
-    width:50%;
+    width: 585px;
     padding-top: 5px;
     padding-left: 190px;
 
