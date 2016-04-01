@@ -46,9 +46,16 @@ body {
 
 }
 
-input[type=text], input[type=password]{
+input[type=text]{
     width: 250px;
     padding: 6px 10px;
+
+}
+
+input[type=password]{
+    width: 250px;
+    padding: 6px 10px;
+    margin-top: 20px;   
 }
 
  input[type=text]:focus,input[type=password]:focus{
@@ -135,12 +142,3 @@ input[type=submit]:hover{
     transition: all 0.5s;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
