@@ -48,22 +48,9 @@ body {
 
 }
 
-<<<<<<< HEAD
 input[type=text], input[type=password]{
     width: 250px;
     padding: 6px 10px;
-=======
-input[type=text]{
-    width: 250px;
-    padding: 6px 10px;
-
-}
-
-input[type=password]{
-    width: 250px;
-    padding: 6px 10px;
-    margin-top: 20px;   
->>>>>>> 88b6c63e4120b8dc95fbe39c40d8f598175265ac
 }
 
  input[type=text]:focus,input[type=password]:focus{
@@ -150,7 +137,6 @@ input[type=submit]:hover{
     transition: all 0.5s;
     cursor: pointer;
 }
-<<<<<<< HEAD
 
 
 
@@ -160,5 +146,3 @@ input[type=submit]:hover{
 
 
 
-=======
->>>>>>> 88b6c63e4120b8dc95fbe39c40d8f598175265ac
