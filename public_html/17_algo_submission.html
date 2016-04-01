@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/16.css">
+    <link rel="stylesheet" href="css/17.css">
+    <link rel="stylesheet" href="bootstrap-3.3.6/dist/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="jss/script.js" ></script>
+</head>
+
+<body>
+<!--********************* H E A D E R *******************-->
+<header></header>
+<!--***************** N A V I G A T I O N ***************-->
+<div id="navigation">
+    <nav>
+        <div class="container-fluid">
+            <span  id="user" class="glyphicon glyphicon-user"><span id="username">&nbspAjith Vijayan</span></span>
+            <div class="nav_right">
+                <li><a href="#">Log Out</a> </li>
+                <li ><a href="#"  onclick="myFunction()" class="notification" >Notifications<span class="badge">5</span></a>
+                    <div class="notif" id="notif">
+                        <p style="color: black;">Notification 1</p>
+                        <p style="color: black;">Notification 2</p>
+                        <p style="color: black;">Notification 3</p>
+                        <p style="color: black;">Notification 4</p>
+                        <p style="color: black;">Notification 5</p>
+                    </div>
+                </li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Computational Lab</a> </li>
+
+            </div>
+        </div>
+    </nav>
+</div>
+<!--********************* C O N T E N T *****************-->
+<div id="content">
+    <section>
+        <div class="container" style="padding-left: 0px;padding-right: 0px">
+            <div id="info1">#Problem Id/Problem Name</div>
+            <div id="info2">Algorithm</div>
+        </div>
+    </section>
+<!--********************* E D I T O R *******************-->
+    <div class="container" id="wrapper">
+
+        <div id="editor">function foo(items) {
+                    var x = "All this is syntax highlighted";
+                    return x;
+                    }
+        </div>
+    </div>
+    <div class="container" style="padding-right: 0px">
+        <a href="#" class="btn btn-primary" style="font-size: 25px;float: right;width: 150px;">Submit</a>
+    </div>
+
+    <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/xcode.js");
+        editor.getSession().setMode("ace/mode/javascript");
+        document.getElementById('editor').style.fontSize='18px';
+        editor.setOption("showPrintMargin", false)
+
+    </script>
+
+</div>
+<!--********************* S I D E  B A R ****************-->
+<aside></aside>
+<!--********************* F O O T E R *******************-->
+<div class="container-fluid" style="padding: 0px;"><footer><hr class="s"></footer></div>
+</div>
+</body>
+</html>
