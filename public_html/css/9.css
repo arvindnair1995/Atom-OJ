@@ -1,5 +1,21 @@
+.affix {
+      top: 0;
+      right: 0;
+      left: auto;
+      width: 100%;
+      opacity: 0.95;
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+  }
+  .affix-top {
+      position: static;
+      top: -35px;
+  }
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
 .container-fluid{
-	height: 200px;
+	height: 150px;
 	background-color:#333333;
 }
 .badge-notify{
@@ -9,4 +25,7 @@
 }
 .form{
 	margin-top: 100px;
+}
+.nav{
+	font-size:18px;
 }
