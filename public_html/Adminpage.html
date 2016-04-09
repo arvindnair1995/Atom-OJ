@@ -3,27 +3,36 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/Adminpage.css" />
          <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <title>Adminpage</title>
     </head>
     <body>
-    		<nav class="navbar navbar-inverse">
-    			
-    		</nav>
+    	<div class="container-fluid">
+    		
+    	</div>
+    	<ul class="nav nav-tabs navbar-inverse" data-spy="affix" data-offset-top="197">
+    	    <li class="pull-right"><a href="#"><span class=" glyphicon glyphicon-user"></span> Log out</a></li>
+    		<li class="pull-right dropdown"><a class="dropdown" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-bell"></span> Notifications<span class="badge badge-notify"> 2</span></a>
+    			<ul class="dropdown-menu">
+    				<li><a href="#">notification 1</a></li>
+    	 			<li><a href="#">notification 2</a></li>
+    	 			<li><a href="#">view all</a></li>
+    			</ul>
+    		</li>
+  		</ul>
     	<div class="row">
     		<div class="col-xs-3">
-    				<nav class="navbar navbar-default navbar-inverse">
-    				  <ul class="nav nav-pills nav-stacked">
-    					<li><a href="#">home</a></li>
-    					<li class="active"><a href="#">generate codes</a></li>
-    				  </ul>
-    			    </nav>
+    			<ul class="nav nav-stacked">
+    				<li><a href="#">home</a></li>
+    				<li class="active"><a href="#">generate codes</a></li>
+    	    	</ul>
     		</div>
-    		<div class="col-xs-9 pull-right">
+    		<div class="col-xs-9">
     			<div class="well well-lg">
     				<div class="btn-group btn-group-justified">
     					<div class="btn-group">
-    						<button type="button" class="btn btn-success">Generate</button>
+    						<button type="button" class="btn btn-primary">Generate</button>
     					</div>
     				</div>
     				<div class="table-responsive">
@@ -38,6 +47,14 @@
     							<tr>
     								<td>1</td>
     								<td>23232</td>
+    							</tr>
+    							<tr>
+    								<td>2</td>
+    								<td>33245</td>
+    							</tr>
+    							<tr>
+    								<td>3</td>
+    								<td>22121</td>
     							</tr>
     						</tbody>
     					</table>
