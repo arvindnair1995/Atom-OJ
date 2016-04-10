@@ -18,23 +18,10 @@
   .affix + .container-fluid {
       padding-top: 70px;
   }
-  .badge-notify{
-  	background:red;
-  	position:relative;
-  	top:-10px;
-  }
-  .dropdown-menu :hover{
-	color:#E7E7E7;
-	background:#3C3C3C;
-	font-size:18px;
-}
+  
 .nav{
 	font-size:16px;
 }
-.button{
-      padding-bottom:30px;
-}
-.sidenav{
-	background-color:#f1f1f1;
-	height:100%;
+.container{
+	padding:30px;
 }
