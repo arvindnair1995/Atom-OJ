@@ -14,20 +14,30 @@
   .affix + .container-fluid {
       padding-top: 70px;
   }
-  .container-fluid{
-  	height: 150px;
-  	background-color:#333333;
-  }
-  .badge-notify{
-  	background:red;
-  	position:relative;
-  	top:-10px;
-  }
-  .dropdown-menu :hover{
+.container-fluid{
+	height: 150px;
+	background-color:#333333;
+}
+.badge-notify{
+	background: red;
+	position:relative;
+	top: -10px;
+}
+.form{
+	margin-top: 100px;
+}
+.nav{
+	font-size:16px;
+}
+.dropdown-menu :hover{
 	color:#E7E7E7;
 	background:#3C3C3C;
 	font-size:18px;
 }
-  .nav{
-	font-size:16px;
+.container{
+	padding-top:10px;
+	font-size: 18px;
+}
+.btn{
+	font-size:18px;
 }

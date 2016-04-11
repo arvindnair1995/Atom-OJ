@@ -15,7 +15,7 @@
       padding-top: 70px;
   }
   .container-fluid{
-  	height: 200px;
+  	height: 150px;
   	background-color:#333333;
   }
   .badge-notify{
@@ -23,3 +23,13 @@
   	position:relative;
   	top:-10px;
   }
+  .nav{
+	font-size:16px;
+}
+  .dropdown-menu :hover{
+	color:#E7E7E7;
+	background:#3C3C3C;
+	font-size:18px;
+}
+
+
