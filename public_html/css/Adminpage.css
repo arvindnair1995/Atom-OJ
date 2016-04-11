@@ -1,3 +1,7 @@
+.container-fluid{
+	height:150px;
+	background-color:#333333;
+}
 .affix {
       top: 0;
       right: 0;
@@ -14,10 +18,6 @@
   .affix + .container-fluid {
       padding-top: 70px;
   }
-  .container-fluid{
-  	height: 150px;
-  	background-color:#333333;
-  }
   .badge-notify{
   	background:red;
   	position:relative;
@@ -28,6 +28,13 @@
 	background:#3C3C3C;
 	font-size:18px;
 }
-  .nav{
+.nav{
 	font-size:16px;
+}
+.button{
+      padding-bottom:30px;
+}
+.sidenav{
+	background-color:#f1f1f1;
+	height:100%;
 }
