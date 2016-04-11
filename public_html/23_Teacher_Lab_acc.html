@@ -29,6 +29,10 @@
   	<hr/>
   	<h3>Program_solution</h3>
   	<hr/>
+  	<div class="col-lg-6" id="editor1">code goes here</div>
+    <!--editor 1 here-->
+    <div class="col-lg-6" id="editor2">code goes here</div>
+    <!--editor 2 here-->
   	<textarea class="form-control" id="remarks" rows="3" placeholder="remarks"></textarea>
   	<button class="btn btn-md btn-success pull-right">Accept</button>
   	<button class="btn btn-md btn-danger pull-right">Reject</button>
@@ -36,6 +40,22 @@
   <!--script----------------------------------------------------------------------------->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var editor = ace.edit("editor1");
+        editor.setTheme("ace/theme/monokai");
+        editor.getSession().setMode("ace/mode/c_cpp");
+        document.getElementById('editor').style.fontSize='18px';
+        editor.setOption("showPrintMargin", false);
+    </script>
+    <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var editor = ace.edit("editor2");
+        editor.setTheme("ace/theme/monokai");
+        editor.getSession().setMode("ace/mode/c_cpp");
+        document.getElementById('editor').style.fontSize='18px';
+        editor.setOption("showPrintMargin", false);
+    </script>
   <!--script------------------------------------------------------------------------------>
 </body>
 </html>

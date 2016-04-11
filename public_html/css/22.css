@@ -45,3 +45,12 @@ h2{
 .form-control{
 	margin-bottom:20px;
 }
+#editor {
+    /** Setting height is also important, otherwise editor wont showup**/
+    height: 500px;
+    padding-top: 100px;
+    position: relative;
+    z-index: -0;
+
+
+}
