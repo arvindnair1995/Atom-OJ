@@ -15,7 +15,7 @@
       padding-top: 70px;
   }
   .container-fluid{
-  	height: 200px;
+  	height: 150px;
   	background-color:#333333;
   }
   .badge-notify{
@@ -23,3 +23,7 @@
   	position:relative;
   	top:-10px;
   }
+ nav span{
+   font-size: 20px;
+   color: white;
+ }
