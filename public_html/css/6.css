@@ -20,8 +20,11 @@ section .container{
 
 }
  div#msgs{
+<<<<<<< HEAD
      position: static;
      right: 15px;
+=======
+>>>>>>> atomoj/ajith
  }
 
 #content .container div#msgs .table, .table-hover{

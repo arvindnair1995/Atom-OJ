@@ -1,5 +1,9 @@
 body {
+<<<<<<< HEAD
     background-image: url("../img/WDF_747792.png");
+=======
+    background-image: url("../img/2.jpg");
+>>>>>>> atomoj/ajith
     background-repeat: no-repeat;
     background-size: 100% 720px;
 }
@@ -96,14 +100,22 @@ a:visited {
 
 
 #credentials{
+<<<<<<< HEAD
     padding-top: 12px;
     padding-bottom: 2px;
+=======
+    padding: 12px 0px;
+>>>>>>> atomoj/ajith
 
 }
 
 input[type=submit]:hover{
+<<<<<<< HEAD
     box-shadow: 0 16px 16px 0 rgba(0,0,0,.8), 0 17px 40px 0 rgba(0,0,0,.8);
 
+=======
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,.8), 0 17px 40px 0 rgba(0,0,0,.8)
+>>>>>>> atomoj/ajith
 }
 
 #login input[type=submit]{
@@ -142,10 +154,14 @@ input[type=submit]:hover{
 
 
 
+<<<<<<< HEAD
 #adminlgn input[type=submit]{
     box-shadow: none;
 
 }
+=======
+
+>>>>>>> atomoj/ajith
 
 
 

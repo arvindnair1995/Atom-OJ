@@ -108,7 +108,11 @@ div#content {
     display: block;
     width:100%;
     height: auto;
+<<<<<<< HEAD
     min-height: 600px;
+=======
+    min-height: 700px;
+>>>>>>> atomoj/ajith
     padding-bottom: 50px;
     margin-top: auto;
     border:none ;
