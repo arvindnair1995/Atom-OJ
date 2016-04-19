@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>PLMS</title>
     <meta charset="utf-8">
@@ -33,7 +34,7 @@
                     </div>
 
                     <div id="reg-btn">
-                    <input type="submit" value="Register" ></input>
+                    <input type="submit" value="Register" >
                     </div>
 
                 </div>
@@ -43,8 +44,9 @@
         </div>
         <div id="login">
             <div class="header"><h3>Login As</h3></div>
+            <form  action="#" method="post">
             <div id="credentials">
-                <form  action="#" method="post">
+
                     <div id="username">
                     <input type="text" name="Username" placeholder="Username"><br>
                     </div>
@@ -52,14 +54,22 @@
                     <div id="pass">
                     <input type="password" name="Password" placeholder="Password" >
                     </div>
-                </form>
+
             </div>
+
 
             <span ><a href="#" id="forgot">Forgot Credentials?</a> </span>
-
-            <div id="lgin-btn">
-                <input type="submit"  value="Log In"></input>
+            <div>
+                <a data-toggle="modal" data-target="#admin" style="color: white;font-size: 14px;padding-left: 4px;">Admin ?</a>
             </div>
+            <div id="lgin-btn">
+                <input type="submit"  value="Log In">
+            </div>
+            </form>
+           
+            <?php
+            include "php/adminModal2.php";
+            ?>
 
         </div>
     </div>
