@@ -1,32 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>CreatePage1</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/9.css" />
-</head>
-<body>
-  <div class="container-fluid">
-	 
-  </div>
-  <ul class="nav nav-tabs navbar-inverse" data-spy="affix" data-offset-top="197">
-    <li><a href="#">My profile</a></li>
-    <li><a href="#">Archived</a></li>
-    <li><a href="#">Active</a></li>
-    <li><a href="#">Overview</a></li>
-    <li><a href="#">Create</a></li>
-    <li class="pull-right"><a href="#"><span class=" glyphicon glyphicon-user"></span> Log out</a></li>
-    <li class="pull-right dropdown"><a class="dropdown" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-bell"></span> Notifications<span class="badge badge-notify"> 2</span></a>
-    	<ul class="dropdown-menu">
-    		<li><a href="#">notification 1</a></li>
-    	 	<li><a href="#">notification 2</a></li>
-    	 	<li><a href="#">view all</a></li>
-    	</ul>
-    </li>
-  </ul>
-	<div class="container">
+<div class="container" style="padding-top: 50px;">
 			<form class="form" action="9_Create_Page1_submit" method="get" accept-charset="utf-8">
 		       <div class="form-group row">
 		       	<label for="coursename" class="col-lg-4 form-control-label"><h4 class="pull-right">Select Course</h4></label>
@@ -75,9 +47,3 @@
 		       </div>
 		    </form>
 	</div>
-  <!--script----------------------------------------------------------------------------->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <!--script------------------------------------------------------------------------------>
-</body>
-</html>
