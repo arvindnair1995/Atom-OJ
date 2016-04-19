@@ -57,24 +57,28 @@
     <div class="container" style="padding-right: 0px;padding-left: 0px;min-height: 500px;height: auto;">
       <div id="lang-sel">
         <div class="dropdown">
-                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"  >Language
-                  <span class="caret"></span></button>
-                  <ul class="dropdown-menu">
-                   <li> <button type="button" class="btn btn-default" style="width:100%;">C</button></li>
-                  </ul>
-</div>
+	      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"  >Language
+	      <span class="caret"></span></button>
+	      <ul class="dropdown-menu">
+	       <li> <button type="button" class="btn btn-default" style="width:100%;">C</button></li>
+	      </ul>
+        </div>
       </div>
     <div id="algo">
 
-                                                        <div class="pannel panel-success">
-                                                          <div class="panel-heading">Algorithm</div>
-                                                        <div class="panel-body">
-                                                            <div id="editor">function foo(items) {
-                                                                var x = "All this is syntax highlighted";
-                                                                return x;
-                                                            }</div>
-                                                        </div>
-                                                      </div>
+    <div class="pannel panel-success">
+      <div class="panel-heading">Algorithm</div>
+    <div class="panel-body">
+        <div id="editor">
+            #include < iostream.h >
+            using namespace std;
+            int main()
+            {
+            	return 0;
+            }
+        </div>
+    </div>
+  </div>
 
 
     </div>
@@ -82,7 +86,7 @@
                           <script>
                               var editor = ace.edit("editor");
                               editor.setTheme("ace/theme/xcode.js");
-                              editor.getSession().setMode("ace/mode/c_cpp.js");
+                              editor.getSession().setMode("ace/mode/c_cpp");
                               document.getElementById('editor').style.fontSize='18px';
                               editor.setOption("showPrintMargin", false);
                               editor.setReadOnly(true);
