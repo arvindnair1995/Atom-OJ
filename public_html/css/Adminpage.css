@@ -1,7 +1,7 @@
 .container-fluid{
 	height:150px;
 	width:100%;
-	background-color:#333333;
+	background-color:#33334D;
 }
 .affix {
       top: 0;
@@ -16,26 +16,43 @@
       position: static;
       top: -35px;
   }
+  .sidenav .affix-top{
+  	position:static;
+  	width:100px;
+  }
+  .sidenav .affix{
+  	position:fixed;
+  	width:100px;
+  }
   .affix + .container-fluid {
       padding-top: 70px;
   }
   .badge-notify{
-  	background:red;
+  	background-color:red;
   	position:relative;
   	top:-10px;
   }
-  .dropdown-menu :hover{
+.nav .dropdown-menu :hover{
 	color:#E7E7E7;
 	background:#3C3C3C;
 	font-size:18px;
 }
 .nav{
 	font-size:16px;
+	color:#FFFFFF;
 }
 .button{
       padding-bottom:30px;
 }
-.sidenav{
-	background-color:#f1f1f1;
-	height:100%;
+.sidenav .nav {
+	background-color:#52527A;
+	min-height:500px;
+	height:auto;
+	width: 100%;
+}
+ li a{
+	color:#FFFFFF;
+}
+.row{
+	width:100%;
 }
