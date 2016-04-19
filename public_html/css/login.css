@@ -1,5 +1,5 @@
 body {
-    background-image: url("../img/2.jpg");
+    background-image: url("../img/WDF_747792.png");
     background-repeat: no-repeat;
     background-size: 100% 720px;
 }
@@ -96,12 +96,14 @@ a:visited {
 
 
 #credentials{
-    padding: 12px 0px;
+    padding-top: 12px;
+    padding-bottom: 2px;
 
 }
 
 input[type=submit]:hover{
-    box-shadow: 0 16px 16px 0 rgba(0,0,0,.8), 0 17px 40px 0 rgba(0,0,0,.8)
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,.8), 0 17px 40px 0 rgba(0,0,0,.8);
+
 }
 
 #login input[type=submit]{
@@ -140,7 +142,10 @@ input[type=submit]:hover{
 
 
 
+#adminlgn input[type=submit]{
+    box-shadow: none;
 
+}
 
 
 

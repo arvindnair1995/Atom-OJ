@@ -33,7 +33,7 @@
                     </div>
 
                     <div id="reg-btn">
-                    <input type="submit" class="btn btn-large"value="Register" ></input>
+                    <input type="submit" class="btn btn-large" value="Register" ></input>
                     </div>
 
                 </div>
@@ -45,51 +45,24 @@
             <div class="header"><h3>Login As</h3></div>
             <div id="credentials">
                 <form  action="#" method="post">
-                    <div id="username">
-                    <input class="form-control" type="text" name="Username" placeholder="Username"><br> 
+                    <div id="username" style="padding-bottom: 2px;">
+                    <input class="form-control" type="text" name="Username" placeholder="Username">
                     </div>
                     <input type="checkbox" style="padding: 5px;"><span>Remember me</span><br>
-                    <div id="pass">
+                    <div id="pass" style="padding-top: 2px;">
                     <input class="form-control" type="password" name="Password" placeholder="Password" >
                     </div>
                 </form>
             </div>
 
             <span ><a href="#" id="forgot">Forgot Credentials?</a> </span>
- 
-           	
-            <div id="btn btn-group"> 
-            	 <button class="btn btn-link" type="button" data-toggle="modal" data-target="#adminlogin">ADMIN LOGIN</button>        	
+
+
+            <div>
+            	 <a data-toggle="modal" data-target="#adminlogin" style="color:white;padding-left:4px;font-size: 16px;">Admin ?</a>
+             </div>
                  <input  class="btn btn-large" type="submit"  value="Log In"></input>
-            </div>
-            <div class="modal fade" id="adminlogin" role="dialog">
-            	<div class="modal-dialog">
-    
-               	 <!-- Modal content-->
-                	<div class="modal-content">
-                    	<div class="modal-header">
-                        	<button type="button" class="close" data-dismiss="modal">&times;</button>
-                        	<h4 class="modal-title">ADMIN LOGIN</h4>
-                        </div>
-                        <div class="modal-body">
-                        	<form class="center-block">
-                        		<div class="form-group">
-                        			<label class="form-control-label" for="adminname">name</label>
-                        			<input class="form-control" type="text" id="adminname" placeholder="name" />
-                        		</div>
-                        		<div class="form-group">
-                        			<label class="form-control-label" for="adminpasswd">password</label>
-                        			<input class="form-control" type="password" id="adminpasswd" placeholder="password" />
-                        		</div>
-                        	</form>
-                        </div>
-                        <div class="modal-footer">
-                        	<input type="submit" class="btn btn-default" ></input>
-                        </div>
-                    </div>
-      
-		     	</div>
-		     </div>
+
 
 
         </div>
