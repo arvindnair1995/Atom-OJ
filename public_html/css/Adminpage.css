@@ -1,5 +1,6 @@
 .container-fluid{
 	height:150px;
+	width:100%;
 	background-color:#333333;
 }
 .affix {
