@@ -98,12 +98,12 @@ a:visited {
 #credentials{
     padding-top: 12px;
     padding-bottom: 2px;
+    padding: 12px 0px;
 
 }
 
 input[type=submit]:hover{
     box-shadow: 0 16px 16px 0 rgba(0,0,0,.8), 0 17px 40px 0 rgba(0,0,0,.8);
-
 }
 
 #login input[type=submit]{
@@ -146,6 +146,7 @@ input[type=submit]:hover{
     box-shadow: none;
 
 }
+
 
 
 
