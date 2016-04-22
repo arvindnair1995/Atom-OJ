@@ -1,5 +1,10 @@
+<?php
+include_once 'php/connect.php';
+$sql="SELECT D_Id,D_Name FROM DEPARTMENT";
+$result=$conn->query($sql);
+?>
 <div style="padding-top: 50px;">
-	<form class="form-horizontal" role="form">
+	<form class="form-horizontal" role="form" method="get" action="php/adminfunctions_Create_Dept.php">
     	<div class="form-group">
     		<div class="col-sm-10">
       			<input type="text" class="form-control" name="newdeptname" placeholder="dept name">
@@ -10,7 +15,7 @@
         </div>
 	</form>
 	<div class="table-responsive col-lg-10">
-		<table class="table table-bordered col-sm-4">
+		<table class="table table-bordered">
 			<thead>
 				<tr>
 					<th>Slno</th>
@@ -18,19 +23,24 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td>1</td>
-					<td>23232</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>33245</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>22121</td>
-				</tr>
+				<?php
+   			if($result->num_rows==0)
+            {
+   		 		echo '<tr><tr colspan="4">no rows returned</tr></td>';
+			}
+			else{
+				$counter=1;
+				while($row=$result->fetch_assoc())
+   		 		{
+   					echo "<tr><td>{$counter}</td><td>{$row['D_Name']}</td></tr>";
+					$counter++;
+				}
+			}
+			?>
 			</tbody>
 		</table>
 	</div>
 </div>
+<?php
+$conn->close();
+?>

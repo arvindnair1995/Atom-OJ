@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "godmode";
+$password = "";
 $dbname = "plms";
 
 // Create connection
