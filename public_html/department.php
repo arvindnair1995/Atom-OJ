@@ -1,10 +1,12 @@
 <?php
 include_once 'php/connect.php';
+include_once 'php/onsubmission.php';
 $sql="SELECT D_Id,D_Name FROM DEPARTMENT";
 $result=$conn->query($sql);
 ?>
 <div style="padding-top: 50px;">
-	<form class="form-horizontal" role="form" method="get" action="php/adminfunctions_Create_Dept.php">
+	<div id="MSG" style="color:red;"></div>
+	<form class="form-horizontal" role="form" method="get" action="php/adminfunctions_Create_Dept.php" id="department">
     	<div class="form-group">
     		<div class="col-sm-10">
       			<input type="text" class="form-control" name="newdeptname" placeholder="dept name">
@@ -26,7 +28,7 @@ $result=$conn->query($sql);
 				<?php
    			if($result->num_rows==0)
             {
-   		 		echo '<tr><tr colspan="4">no rows returned</tr></td>';
+   		 		echo '<tr><td colspan="4" style="color:red;">**no rows returned</td></tr>';
 			}
 			else{
 				$counter=1;

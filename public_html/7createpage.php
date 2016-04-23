@@ -1,15 +1,32 @@
+<?php
+include_once 'php/connect.php';
+$sql="SELECT C_Id,C_Name FROM COURSE";
+$result=$conn->query($sql);
+?>
 <div class="container" style="padding-top: 50px;">
 			<form class="form" action="9_Create_Page1_submit" method="get" accept-charset="utf-8">
+				<div class="form-group row">
+		        <label for="coursetype" class="col-lg-4 form-control-label"><h4 class="pull-right">Course type</h4></label>
+		       	<div class="col-lg-6 form-group">
+		       		<select class="form-control" id="semesterno">
+		       			<option>Under Grad</option>
+		       			<option>Post Grad</option>
+		       		</select>
+		       	</div>
+		       </div>
 		       <div class="form-group row">
 		       	<label for="coursename" class="col-lg-4 form-control-label"><h4 class="pull-right">Select Course</h4></label>
 		       	<div class="col-lg-6 form-group">
 		       		<select class="form-control" id="coursename">
-		       			<option>Compuer Science</option>
-		       			<option>IT</option>
-		       			<option>Civil</option>
-		       			<option>EEE</option>
-		       			<option>EC</option>
-		       			<option>Safety</option>
+		       			<?php
+			   			if($result->num_rows>0)
+			            {
+			   		 		while($row=$result->fetch_assoc())
+			   		 		{
+			   					echo "<option>".$row["C_Name"]."</option>";
+							}
+						}
+						?>
 		       		</select>
 		       	</div>
 		       </div>
@@ -28,16 +45,9 @@
 		       	</div>
 		       </div>
 		       <div class="form-group row">
-		       	<label for="Year" class="col-lg-4 form-control-label"><h4 class="pull-right">Select Year</h4></label>
+		       	<label for="scheme" class="col-lg-4 form-control-label"><h4 class="pull-right">Select Scheme</h4></label>
 		       	<div class="col-lg-6 form-group">
-		       		<select class="form-control" id="Year">
-		       			<option>Compuer Science</option>
-		       			<option>IT</option>
-		       			<option>Civil</option>
-		       			<option>EEE</option>
-		       			<option>EC</option>
-		       			<option>Safety</option>
-		       		</select>
+		       		<input class="form-control" type="date"  id="scheme"/>
 		       	</div>
 		       </div>
 		       <div class="form-group row">
@@ -47,3 +57,6 @@
 		       </div>
 		    </form>
 	</div>
+<?php
+$conn->close();
+?>

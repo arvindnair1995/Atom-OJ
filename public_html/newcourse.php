@@ -1,11 +1,11 @@
 <?php
 include_once 'php/connect.php';
+include_once 'php/onsubmission.php';
 $sql="SELECT D_Id,D_Name FROM DEPARTMENT";
 $result=$conn->query($sql);
 ?>
 		
-	
-<form class="form" style="margin-top:100px;" action="php/adminfunctions_Create_Course.php" method="get" accept-charset="utf-8">
+<form class="form" style="margin-top:100px;" action="php/adminfunctions_Create_Course.php" method="get" id="newcourse" accept-charset="utf-8">
    <div class="form-group row">
    	<label for="departmentname" class="col-lg-4 form-control-label"><h4 class="pull-right">Select Department:</h4></label>
    	<div class="col-lg-6 form-group">
@@ -43,6 +43,7 @@ $result=$conn->query($sql);
    	</div>
    </div>
 </form>
+<span id="MSG" style="color:red;"></span>
 <?php
 $conn->close();
 ?>
