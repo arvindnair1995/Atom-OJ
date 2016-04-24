@@ -1,4 +1,5 @@
 <script>
+
 	$('form').on('submit',function(){
 		var page=$(this).attr('id');
 		$.get($(this).attr('action'),$(this).serialize(),function(response){
@@ -12,4 +13,5 @@
 		});
 		return false;
 	});
+	
 </script>

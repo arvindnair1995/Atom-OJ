@@ -1,57 +1,43 @@
-<?php
-include_once 'php/connect.php';
-include_once 'php/onsubmission.php';
-$sqlD="SELECT D_Id,D_Name FROM DEPARTMENT";
-$sqlC="SELECT C_Name,C_Type FROM COURSE";
-$resultD=$conn->query($sqlD);
-$resultC=$conn->query($sqlC);
+<?php 
+ include_once 'php/onsubmission.php';
 ?>
 <form class="form" style="margin-top:100px;" action="php/adminfunctions_Create_Scheme.php" method="get" id="newscheme" accept-charset="utf-8">
    <div class="form-group row">
    	<label for="departmentname" class="col-lg-4 form-control-label"><h4 class="pull-right">Select Department:</h4></label>
    	<div class="col-lg-6 form-group">
-   		<select class="form-control" name="departmentname">
-   			<?php
-   			if($resultD->num_rows>0)
-            {
-   		 		while($row=$resultD->fetch_assoc())
-   		 		{
-   					echo "<option>".$row["D_Name"]."</option>";
+   		<select class="form-control parent" id="dept" name="departmentname">
+   			<option>select department</option>
+   			<?php>include_once 'php/connect.php';
+    echo "in fetch";
+	$sql="SELECT D_Name FROM DEPARTMENT";
+	 
+	$result=$conn->query($sql);
+	if($result->num_rows>0)
+	            {echo "string";
+	   		 		while($row=$result->fetch_assoc())
+	   		 		{
+	   					echo "<option>".$row["D_Name"]."</option>";
+					}			
 				}
-			}
-			?>
+	
+	$conn->close();
+	?>
    		</select>
    	</div>
    </div>
    <div class="form-group row">
     <label for="coursetype" class="col-lg-4 form-control-label"><h4 class="pull-right">Select Program:</h4></label>
    	<div class="col-lg-6 form-group">
-   		<select class="form-control" name="coursetype">
-   			<?php
-   			if($resultC->num_rows>0)
-            {
-   		 		while($row=$resultC->fetch_assoc())
-   		 		{
-   					echo "<option>".$row["C_Type"]."</option>";
-				}
-			}
-			?>
+   		<select class="form-control parent"  id="ctype" name="coursetype">
+   			<option>select department</option>
    		</select>
    	</div>
    </div>
    <div class="form-group row">
    	<label for="coursename" class="col-lg-4 form-control-label"><h4 class="pull-right">Select Course:</h4></label>
    	<div class="col-lg-6 form-group">
-   		<select class="form-control" name="coursename">
-   			<?php
-   			if($resultC->num_rows>0)
-            {
-   		 		while($row=$resultC->fetch_assoc())
-   		 		{
-   					echo "<option>".$row["C_Name"]."</option>";
-				}
-			}
-			?>
+   		<select class="form-control" id="cname" name="coursename">
+   			<option>select department</option>
    		</select>
    	</div>
    </div>
@@ -68,6 +54,4 @@ $resultC=$conn->query($sqlC);
    </div>
 </form>
 <div id="MSG" style="color:red;"></div>
-<?php
-$conn->close();
-?>
+<script src="js/Loaddropdown.js"></script>

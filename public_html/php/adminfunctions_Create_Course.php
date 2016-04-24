@@ -10,8 +10,15 @@ if(!empty($Coursename)){
 	}
 	if(!file_exists("../Files/$Deptname/$Coursetype/$Coursename")){
 	mkdir("../Files/$Deptname/$Coursetype/$Coursename");
-		$sql="INSERT INTO COURSE (C_Name,C_Type) VALUES('$Coursename','$Coursetype')";
-		if ($conn->query($sql) === TRUE) {
+		$sqlD="SELECT D_Id FROM DEPARTMENT WHERE D_Name='$Deptname';";
+		$result=$conn->query($sqlD);
+		
+		$dep = $result->fetch_array();
+		$depid = $dep['D_Id'];
+		$sql="INSERT INTO COURSE (C_Name,C_Type,D_Id) VALUES('$Coursename','$Coursetype','$depid');";
+
+		
+		if ($result->num_rows >0 && $conn->query($sql)===TRUE) {
         	echo "New course ".$Coursename." added successfully";
         	} 
         else {

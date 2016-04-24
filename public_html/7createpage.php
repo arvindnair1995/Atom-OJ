@@ -47,7 +47,7 @@ $result=$conn->query($sql);
 		       <div class="form-group row">
 		       	<label for="scheme" class="col-lg-4 form-control-label"><h4 class="pull-right">Select Scheme</h4></label>
 		       	<div class="col-lg-6 form-group">
-		       		<input class="form-control" type="date"  id="scheme"/>
+		       		<input class="form-control" type="number" min="2000" max="2020" step="1" value="<?php echo date("Y")  ?>"  id="scheme"/>
 		       	</div>
 		       </div>
 		       <div class="form-group row">
