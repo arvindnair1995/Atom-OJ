@@ -15,6 +15,10 @@ else {
     if ($res->num_rows > 0) {
         $rows = $res->fetch_assoc();
         $_SESSION['user']=$_POST['Username'];
+        $sql = " SELECT Reg_No FROM STUDENT WHERE U_Name = '$user';";
+        $reg = $conn->query($sql) or die($conn->error);
+        $regno = $reg->fetch_assoc();
+        $_SESSION['regno'] = $regno['Reg_No'];
 
         if($rows["Role"] == 1) echo "1";
         else if($rows["Role"] == 0) echo "0";

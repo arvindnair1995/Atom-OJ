@@ -8,12 +8,8 @@
   <link rel="stylesheet" href="css/8.css" />
 </head>
 <body>
-  <div class="container-fluid">
-	 
-  </div>
-<?php
-include_once "php/student_dashboard_nav.php";
-?>
+  <div class="container-fluid"></div>
+  <div
 	<div class="well-lg"  id="content">
 		<div class="well well-lg">
 			<div>

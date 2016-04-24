@@ -14,29 +14,12 @@ session_start();
     <link rel="stylesheet" href="css/8.css" />
 </head>
 <body>
-<div class="container-fluid">
 
-</div>
+<div class="container-fluid"></div>
 <?php
 include_once "php/student_dashboard_nav.php";
 ?>
-<div class="well-lg"  id="content">
-    <div class="well well-lg">
-        <div>
-            <label>Archived course 1</label>
-
-            <a href="#" class="btn btn-success pull-right">ENTER</a>
-        </div>
-    </div>
-    <div class="well well-lg">
-        <div>
-            <label>Archived course 1</label>
-            <a href="#" class="btn btn-success pull-right">ENTER</a>
-        </div>
-    </div>
-</div>
-
+<div class="well-lg"  id="content"></div>
 
 </body>
-
 </html>
