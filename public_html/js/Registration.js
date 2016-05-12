@@ -1,0 +1,12 @@
+$(document).ready(function(){
+	$("button").on("click",function(){
+		if($(this).val()=='staff')
+		{
+			$("#dd").load("../public_html/StaffRegistration.php");
+		}
+		else
+		{
+			$("#dd").load("../public_html/StudentRegistration.php");
+		}
+	});
+});
