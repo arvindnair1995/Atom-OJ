@@ -10,7 +10,7 @@ if(isset($_POST['LEVEL'])===TRUE && empty($_POST['LEVEL'])===FALSE)
    $result=$conn->query($sql);
    if($result->num_rows>0)
 	            {
-	            	echo "<option>select course type</option>";
+	            	echo "<option selected disabled>select course type</option>";
 	   		 		while($row=$result->fetch_assoc())
 	   		 		{
 	   		 			

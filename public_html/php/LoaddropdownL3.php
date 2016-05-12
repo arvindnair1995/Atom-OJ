@@ -14,7 +14,7 @@ if(isset($_POST['LEVEL'])===TRUE && empty($_POST['LEVEL'])===FALSE)
    print_r($result);
    if($result->num_rows>0)
 	            {
-	            	echo "<option>select course name</option>";
+	            	echo "<option selected disabled>select course name</option>";
 	   		 		while($row=$result->fetch_assoc())
 	   		 		{
 	   					echo "<option>".$row["C_Name"]."</option>";

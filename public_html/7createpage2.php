@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CreatePage5</title>
+  <title>CreatePage3</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/14.css" />
+  <link rel="stylesheet" href="css/11.css" />
 </head>
 <body>
   <div class="container-fluid">
+	 
   </div>
   <ul class="nav nav-tabs navbar-inverse" data-spy="affix" data-offset-top="197">
     <li><a href="#">My profile</a></li>
@@ -26,11 +27,29 @@
     </li>
   </ul>
   <div class="container">
-  	<pre>lab name/dept/year
-  		you added n question......
-  		..........
-  	</pre>
-  	<button type="button" class="btn btn-md btn-primary pull-right">Create</button>
+  	<button class="btn btn-large btn-default pull-right"><a href="12_Add_Problem.html">Add new problem</a></button>
+  	<table class="table table-hover table-responsive">
+  		<thead>
+  			<tr>
+  				<th>Slno</th>
+  				<th>Problem ID</th>
+  				<th>Problem name</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+  			<tr>
+  				<td>1</td>
+  				<td><a href="#">123</a></td>
+  				<td>sum</td>
+  			</tr>
+  			<tr>
+  				<td>2</td>
+  				<td><a href="#">321</a></td>
+  				<td>sum</td>
+  			</tr>
+  		</tbody>
+  	</table>
+  	<button class="btn btn-large btn-primary pull-right"><a href="13_Create_Page4.html">continue</a></button>
   </div>
   <!--script----------------------------------------------------------------------------->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>

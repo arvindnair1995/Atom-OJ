@@ -5,8 +5,8 @@
    <div class="form-group row">
    	<label for="departmentname" class="col-lg-4 form-control-label"><h4 class="pull-right">Select Department:</h4></label>
    	<div class="col-lg-6 form-group">
-   		<select class="form-control parent" id="dept" name="departmentname">
-   			<option>select department</option>
+   		<select class="form-control parent" id="1" name="departmentname">
+   			<option selected disabled>select department</option>
    			<?php>include_once 'php/connect.php';
     echo "in fetch";
 	$sql="SELECT D_Name FROM DEPARTMENT";
@@ -28,16 +28,16 @@
    <div class="form-group row">
     <label for="coursetype" class="col-lg-4 form-control-label"><h4 class="pull-right">Select Program:</h4></label>
    	<div class="col-lg-6 form-group">
-   		<select class="form-control parent"  id="ctype" name="coursetype">
-   			<option>select department</option>
+   		<select class="form-control parent"  id="2" name="coursetype">
+   			<option disabled>select department</option>
    		</select>
    	</div>
    </div>
    <div class="form-group row">
    	<label for="coursename" class="col-lg-4 form-control-label"><h4 class="pull-right">Select Course:</h4></label>
    	<div class="col-lg-6 form-group">
-   		<select class="form-control" id="cname" name="coursename">
-   			<option>select department</option>
+   		<select class="form-control" id="3" name="coursename">
+   			<option disabled>select department</option>
    		</select>
    	</div>
    </div>

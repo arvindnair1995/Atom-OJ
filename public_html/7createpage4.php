@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CreatePage2</title>
+  <title>CreatePage5</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/10.css" />
+  <link rel="stylesheet" href="css/14.css" />
 </head>
 <body>
   <div class="container-fluid">
-	 
   </div>
   <ul class="nav nav-tabs navbar-inverse" data-spy="affix" data-offset-top="197">
     <li><a href="#">My profile</a></li>
@@ -27,29 +26,11 @@
     </li>
   </ul>
   <div class="container">
-  	<table class="table table-hover table-responsive">
-  		<thead>
-  			<tr>
-  				<th>Problem id</th>
-  				<th>Problem name</th>
-  				<th>Year</th>
-  			</tr>
-  		</thead>
-  		<tbody>
-  			<tr>
-  				<td><a href="#">123</a></td>
-  				<td>sum</td>
-  				<td>2013</td>
-  				<td><button class="btn btn-success">ADD</button></td>
-  			</tr>
-  			<tr>
-  				<td><a href="#">321</a></td>
-  				<td>sum</td>
-  				<td>2013</td>
-  				<td><button class="btn btn-success">ADD</button></td>
-  			</tr>
-  		</tbody>
-  	</table>
+  	<pre>lab name/dept/year
+  		you added n question......
+  		..........
+  	</pre>
+  	<button type="button" class="btn btn-md btn-primary pull-right"><a href="7_Teacher_Dashboard.html">create</a></button>
   </div>
   <!--script----------------------------------------------------------------------------->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>

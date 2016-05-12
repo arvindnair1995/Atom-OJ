@@ -1,7 +1,7 @@
 <div class="well well-lg">
 	<div>
 	<label>Active course 1</label>
-	<a href="#" class="btn btn-success pull-right">ENTER</a>
+	<a href="19_Teacher_Lab_acc.html" class="btn btn-success pull-right">ENTER</a>
 	</div>
 </div>
 <div class="well well-lg">
